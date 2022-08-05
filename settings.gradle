@@ -1,0 +1,25 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "Multi Module Demo"
+include ':app'
+include ':common'
+include ':core'
+include ':core:api'
+include ':di'
+include ':data'
+include ':domain'
+include ':feature'
+include ':model'
+include ':navigation'
